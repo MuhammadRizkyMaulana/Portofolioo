@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Landing Page | Portofolio</title>
+</head>
+
+<body>
+    <div class="full-container">
+
+        <!-- Navigation Start -->
+        <nav>
+            <div class="logo">
+                <h1>PORTOFOLIO</h1>
+            </div>
+            <button class="hamburger-button" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="site-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="navigation-overlay" id="site-navigation">
+            <div class="navigation" aria-label="Navigasi utama" data-i18n-aria="navigationLabel">
+                <a href="#home" data-i18n="navProfile">Profil</a>
+                <a href="#about" data-i18n="navAbout">Tentang Saya</a>
+                <a href="#portofolio" data-i18n="navPortfolio">Portofolio</a>
+                <a href="#experiences" data-i18n="navExperience">Pengalaman</a>
+                <a href="#skills" data-i18n="navSkills">Keterampilan</a>
+                <a href="#education" data-i18n="navEducation">Pendidikan</a>
+                <a href="#contact" data-i18n="navContact">Kontak Saya</a>
+                <div class="language-switch" role="group" aria-label="Pilih bahasa" data-i18n-aria="languageLabel">
+                    <button type="button" data-language="id" aria-pressed="true">ID</button>
+                    <button type="button" data-language="en" aria-pressed="false">EN</button>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation End -->
+        <main class="slide-stage" id="slide-stage">
+        <!-- Hero Section Start -->
+        <section class="hero" id="home">
+             <audio id="audio1" src="assets/music/Wonderwall - Oasis.mp3"></audio>
+            <img class="profile-photo" src="assets/images/mepic.png" alt="Foto profil Muhammad Rizky Maulana" onclick="putarMusik1()">
+            <div class="text-container">
+                <h1><span data-i18n="heroGreeting">Halo, saya</span> <span class="name-marking">Muhammad Rizky Maulana</span></h1>
+                <h4 data-i18n="heroRole">Web Developer dan Data Entry</h4>
+                <p data-i18n="heroIntro">Selamat datang di portofolio saya!</p>
+                <div class="call-to-actions">
+                    <a href="#portofolio" data-i18n="heroPortfolioButton">Portofolio</a>
+                    <a href="#contact" data-i18n="heroContactButton">Kontak Saya</a>
+                </div>
+                <a href="https://drive.google.com/file/d/1rHTP5WRW-gawPvlKG59uNEIeMywLsHMQ/view?usp=sharing" 
+                class="btn-download" data-i18n="downloadCv" target="_blank">Download CV (PDF)</a>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+        <!-- About Section Start -->
+        <section class="about" id="about">
+            <h1 data-i18n="aboutTitle">TENTANG SAYA</h1>
+            <div class="p-container">
+                <p data-i18n="aboutText" data-i18n-html="true">Saya merupakan lulusan Sarjana (S1) Teknik Informatika yang berfokus pada pengembangan aplikasi web, 
+                    pengelolaan basis data, dan efisiensi operasional. Berpengalaman merancang serta mengimplementasikan 
+                    sistem berbasis PHP, JavaScript, dan MySQL melalui proyek Kerja Praktik (KP) serta Skripsi 
+                    menggunakan metode Analytical Hierarchy Process (AHP).<br><br>Tak hanya di bidang koding, saya juga menerapkan pengelolaan 
+                    data dan dokumen menggunakan Microsoft Office (Word, Excel, PowerPoint) yang diasah melalui kegiatan 
+                    Pengabdian Kepada Masyarakat (PKM) sebagai pemateri pelatihan.<br><br>
+                    Didukung pengalaman kerja operasional industri sebagai Operator Mixing, saya memiliki ketelitian tinggi, 
+                    etos kerja yang kuat, kedisiplinan terhadap SOP. Saya selalu terbuka untuk berkolaborasi dan berkontribusi 
+                    dalam proyek pengembangan web, pengolahan data (data entry), maupun dukungan sistem IT.</p>
+            </div>
+        </section>
+        <section class="portofolio" id="portofolio">
+            <h1 data-i18n="portfolioTitle">PORTOFOLIO</h1>
+            <p data-i18n="portfolioIntro">Portofolio saya mencakup berbagai proyek dan produktivitas yang menunjukkan kemampuan dan pengalaman saya.</p>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/images/pkm.jpeg" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription1">Pengabdian Kepada Masyarakat: Pelatihan Komputer menggunakan Microsoft Office kepada siswa-siswi</p>
+                        <a href="https://mypublikasi.com/index.php/JARI/article/view/87/59" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="./assets/images/projek2.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription2">Kerja Praktik: Merancang Sistem Aplikasi Asuransi Keluarga Berbasis Web PT. Mitra Proteksi Madani </p>
+                        <a href="https://www.jurnalmahasiswa.com/index.php/jriin/article/view/1458/948" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/projek1.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription3">Projek Skripsi: Pengembangan Sistem Pendukung Keputusan Pemilihan Anime Terbaik Menggunakan Metode Analytic Hierarchy Process Pada Platform Bstation</p>
+                        <a href="https://journal.eng.unila.ac.id/index.php/jitet/article/view/10835/4444" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/Projek22.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription4">Membuat dan Merancang Sistem Informasi Perpustakaan</p>
+                        <a href="https://drive.google.com/file/d/1QfqQmrTQUYMI0He_hvK9Ckozpe5Xk9ZC/view?usp=sharing" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/data.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription5">Membuat data anime integritas untuk diimplementasikan pada projek skripsi "Pengembangan Sistem Pendukung Keputusan Pemilihan Anime Terbaik Menggunakan 
+                        Metode Analytic Hierarchy Process Pada Platform Bstation"</p>
+                        <a href="https://docs.google.com/spreadsheets/d/1yo-CQfvZR-hLb4-wy5blt-1hL-StuF2d/edit?usp=drive_link&ouid=114756654740902899293&rtpof=true&sd=true" 
+                        target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                 <div class="card">
+                    <img src="./assets/images/logostore.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription6">Membuat logo untuk toko online</p>
+                        <a href="https://canva.link/gr5q877mp5uysyy" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/banner.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription7">Membuat banner untuk kedai</p>
+                        <a href="https://canva.link/i4w4vrdcnw04lqe" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/indonesia.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription8">Membuat poster untuk menyambut hari kemerdekaan Indonesia</p>
+                        <a href="https://canva.link/peq794zvxb4yv1k" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/desainpromo.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription9">Membuat desain promosi untuk toko online</p>
+                        <a href="https://canva.link/m2al61xt1mnxo5m" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/menu.png" alt="Projek">
+                    <div class="overlay">
+                        <p style="font-size: 14px;" data-i18n="projectDescription10">Membuat menu makanan dan minuman untuk kedai</p>
+                        <a href="https://canva.link/526o2uqdzervwxp" target="_blank" data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/pelatihan1.jpg" alt="Sertifikat">
+                    <div class="overlay">
+                        <p data-i18n="projectDescription11">Pelatihan Google (Gapura Digital): Tips Memasarkan Produk Anda Secara Online di Platform E-Commerce</p>
+                        <a href="https://drive.google.com/file/d/1RGWtScjJc453Qv-sFzFlJRDqmJY9u0zx/view?usp=sharing" target="_blank" 
+                        data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/sertifikasi.jpg" alt="Sertifikat">
+                    <div class="overlay">
+                        <p data-i18n="projectDescription12">Uji Kompetensi: (Pemrograman) dari Lembaga Sertifikasi Profesi (LSP Unpam) lisensi BNSP</p>
+                        <a href="https://drive.google.com/file/d/1vM1I8YYPDtQwP1z9Z2ZNSSz--a9iyuEz/view?usp=sharing" target="_blank" 
+                        data-i18n="viewDetails">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-pagination" aria-label="Navigasi halaman proyek">
+                <button type="button" id="project-previous" data-i18n="projectPrevious" disabled>← Sebelumnya</button>
+                <span id="project-page-label" aria-live="polite">Halaman 1 dari 3</span>
+                <button type="button" id="project-next" data-i18n="projectNext">Berikutnya →</button>
+            </div>
+        </section>
+        <!-- Portofolio End -->
+        <!-- My Experiences Start -->
+        <section class="experiences" id="experiences">
+            <h1 data-i18n="experienceTitle">PENGALAMAN</h1>
+            <p data-i18n="experienceIntro">Pengalaman kerja saya mencakup berbagai bidang yang memungkinkan saya untuk mengembangkan keterampilan dan pengetahuan yang relevan.</p>
+            <div class="experiences-card-container">
+                <div class="experience-card">
+                    <div class="experience-card-header">
+                        <div class="experience-heading">
+                            <h3>PT GEN (Global Elektrik Nasional)</h3>
+                            <strong class="experience-role" data-i18n="experienceRole">Operator Mixing</strong>
+                            <p class="experience-date">September 2021 - Desember 2021</p>
+                        </div>
+                        <img class="experience-logo" src="assets/images/GEN.png" alt="Logo PT GEN">
+                    </div>
+                    <ul>
+                        <li data-i18n="experienceDuty1">Mengoperasikan dan melakukan perawatan harian mesin pencampur berkapasitas besar sesuai SOP perusahaan.</li>
+                        <li data-i18n="experienceDuty2">Menimbang dan mencampur bahan baku berdasarkan formula produksi dengan tingkat akurasi 100%.</li>
+                        <li data-i18n="experienceDuty3">Menjaga konsistensi dan kualitas campuran untuk meminimalkan cacat produk sebelum material diteruskan ke proses produksi berikutnya.</li>
+                        <li data-i18n="experienceDuty4">Menerapkan standar K3 secara disiplin demi menjaga lingkungan kerja yang aman dan produktif.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- My Experiences End -->
+        <!-- Skills Start -->
+        <section class="skills" id="skills">
+            <h1 data-i18n="skillsTitle">KEMAMPUAN &amp; KETERAMPILAN</h1>
+            <p data-i18n="skillsIntro">Keterampilan yang saya miliki mencakup berbagai aspek teknis dan interpersonal yang memungkinkan saya untuk berkontribusi secara efektif dalam lingkungan kerja yang dinamis.</p>
+            <div class="skills-pages">
+                <div class="skill-page" data-skill-page>
+                    <h2 data-i18n="technicalSkillsTitle">Kemampuan Teknis</h2>
+                    <ul class="technical-skills-list">
+                        <li data-i18n="technicalSkill1">Web Developer</li>
+                        <li data-i18n="technicalSkill2">Programmer</li>
+                        <li data-i18n="technicalSkill3">IT Support</li>
+                        <li data-i18n="technicalSkill4">Administrasi Pengelolaan Dokumen dan Laporan</li>
+                        <li data-i18n="technicalSkill5">Data Entry</li>
+                        <li data-i18n="technicalSkill6">Operasional Produksi</li>
+                        <li data-i18n="technicalSkill7">Kontrol Kualitas Dasar</li>
+                    </ul>
+                </div>
+                <div class="skill-page" data-skill-page hidden inert>
+                    <h2 data-i18n="softwareSkillsTitle">Kemampuan Software</h2>
+                    <div class="skills-card-container">
+                        <div class="skill-card">
+                            <img src="assets/images/skills/html.png" alt="..">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/css.png" alt="..">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/js-logo.png" alt="..">
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/PHP-logo.svg.png" alt="..">
+                            <h3>PHP</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/mysql.png" alt="..">
+                            <h3>MySQL</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/database.png" alt="..">
+                            <h3>Database</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/word.png" alt="..">
+                            <h3>Word</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/excel.png" alt="..">
+                            <h3>Excel</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/powerpoint.png" alt="..">
+                            <h3>Powerpoint</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/canva.png" alt="..">
+                            <h3>Canva</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/xampp.png" alt="..">
+                            <h3>Xampp</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/phpmyadmin.png" alt="..">
+                            <h3>Phpmyadmin</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/images/skills/vsc.png" alt="..">
+                            <h3>Visual Studio Code</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-page" data-skill-page hidden inert>
+                    <h2 data-i18n="softSkillsTitle">Soft Skills</h2>
+                    <ul class="soft-skills-list">
+                        <li data-i18n="softSkill1">Adaptabilitas</li>
+                        <li data-i18n="softSkill2">Manajemen Waktu</li>
+                        <li data-i18n="softSkill3">Problem Solving</li>
+                        <li data-i18n="softSkill4">Kreativitas</li>
+                        <li data-i18n="softSkill5">Komunikasi</li>
+                        <li data-i18n="softSkill6">Empati</li>
+                        <li data-i18n="softSkill7">Kerja Sama Tim</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-pagination" aria-label="Navigasi halaman keterampilan" data-i18n-aria="skillsPaginationLabel">
+                <button type="button" id="skill-previous" data-i18n="projectPrevious" disabled>← Sebelumnya</button>
+                <span id="skill-page-label" aria-live="polite">Halaman 1 dari 3</span>
+                <button type="button" id="skill-next" data-i18n="projectNext">Berikutnya →</button>
+            </div>
+        </section>
+        <!-- Skill End -->
+        <!-- Education Start -->
+        <section class="education" id="education">
+            <h1 data-i18n="educationTitle">PENDIDIKAN</h1>
+            <p data-i18n="educationIntro">Pendidikan sebagai fondasi utama dalam membentuk individu yang kompeten dan berpengetahuan luas. 
+            Melalui pendidikan, seseorang tidak hanya memperoleh pengetahuan akademis, tetapi juga keterampilan sosial, 
+            etika, dan kemampuan berpikir kritis yang diperlukan untuk menghadapi tantangan kehidupan. 
+            </p>
+            <div class="education-content">
+                <div class="educations-card-container">
+                    <div class="education-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div class="detail">
+                            <h3>Universitas Pamulang - (2021 - 2026)</h3>
+                            <p><i data-i18n="educationDegree">Teknik Informatika - IPK: 3.37</i></p>
+                            <ul>
+                                <li>
+                                    <strong data-i18n="educationThesisTitle">Skripsi dan Publikasi Ilmiah</strong>
+                                    <p data-i18n="educationThesis" class="teks-size-small">“Pengembangan Sistem Pendukung Keputusan Pemilihan Anime Terbaik Menggunakan Metode Analytic Hierarchy Process Pada Platform Bstation” — dipublikasikan pada Jurnal Informatika dan Teknik Elektro Terapan, Vol. 14 No. 3, Agustus 2026, terakreditasi SINTA 5.</p>
+                                </li>
+                                <li>
+                                    <strong data-i18n="educationInternshipTitle">Kegiatan Mata Kuliah Kerja Praktik (KP)</strong>
+                                    <p data-i18n="educationInternship" class="teks-size-small">Merancang dan membuat sistem “Perancangan Sistem Aplikasi Asuransi Keluarga Berbasis Web di PT. Mitra Proteksi Madani” pada September 2024.</p>
+                                </li>
+                                <li>
+                                    <strong data-i18n="educationCommunityTitle">Kegiatan Pengabdian Kepada Masyarakat (PKM)</strong>
+                                    <p data-i18n="educationCommunity" class="teks-size-small">Anggota dan pemateri “Pelatihan Komputer Menggunakan Microsoft Office kepada Siswa-Siswi MAN 1 Lebak, Banten” pada Maret 2024.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img class="education-photo" src="assets/images/sayamau.png" alt="Foto Muhammad Rizky Maulana" data-i18n-alt="educationPhotoAlt" onclick="putarMusik2()">
+                 <audio id="audio2" src="assets/music/TULUS - Tujuh Belas.mp3"></audio>
+            </div>
+        </section>
+        <!-- Education End -->
+        <!-- Contact Start -->
+        <section class="contact" id="contact">
+            <h1 data-i18n="contactTitle">KONTAK SAYA</h1>
+            <p data-i18n="contactIntro">Silahkan melihat sosial media saya dengan klik dibawah ini:</p>
+            <p data-i18n="contactInvite">Ayo kita berdiskusi</p>
+            <div class="contact-socials">
+            <div class="icon-container">
+                <div class="icon-wrapper">
+                    <a href="https://linkedin.com/in/muhammad-rizky-maulana-51b767291" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="https://github.com/MuhammadRizkyMaulana" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="https://www.instagram.com/mrmrizky_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="https://www.facebook.com/bbg.rizky.50" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="https://www.youtube.com/@mrmrizky" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="https://wa.me/6285183349956" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="mailto:mrizkymaulana215@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Contact End -->
+        </main>
+        <!-- Footer Start -->
+        <footer>
+            <div class="slide-counter" aria-live="polite" aria-label="Slide 1 dari 7">
+                <span id="slide-current">01</span>
+                <span aria-hidden="true">/</span>
+                <span id="slide-total">07</span>
+            </div>
+            <p data-i18n="footerCopyright">&copy; 2026 - [Muhammad Rizky Maulana].</p>
+        </footer>
+        <!-- Footer End -->
+    </div>
+    <script src="assets/js/navbarScirpt.js"></script>
+</body>
+
+</html>
